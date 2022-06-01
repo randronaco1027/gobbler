@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS food_blog;
+
+CREATE DATABASE food_blog;
