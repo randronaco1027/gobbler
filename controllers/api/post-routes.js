@@ -8,28 +8,28 @@ router.get('/', (req, res) => {
             attributes: ['id', 'username']
         }
     })
-    .then(postData => res.json(postData))
-    .catch(err => {
-        console.log(err)
-        res.status.apply(500).json(err)
-    })
+        .then(postData => res.json(postData))
+        .catch(err => {
+            console.log(err)
+            res.status.apply(500).json(err)
+        })
 })
 
 router.get('/:id', (req, res) => {
     Post.findOne({
         where: {
-        id : req.params.id
+            id: req.params.id
         },
         include: {
             model: User,
             attributes: ['id', 'username']
         }
     })
-    .then(postData => res.json(postData))
-    .catch(err => {
-        console.log(err)
-        res.status.apply(500).json(err)
-    })
+        .then(postData => res.json(postData))
+        .catch(err => {
+            console.log(err)
+            res.status.apply(500).json(err)
+        })
 })
 
 router.post('/', (req, res) => {
@@ -39,11 +39,11 @@ router.post('/', (req, res) => {
         recipe_text: req.body.recipe_text,
         user_id: req.body.user_id
     })
-    .then(postData => res.json(postData))
-    .catch(err => {
-        console.log(err)
-        res.status.apply(500).json(err)
-    })
+        .then(postData => res.json(postData))
+        .catch(err => {
+            console.log(err)
+            res.status.apply(500).json(err)
+        })
 })
 
 module.exports = router

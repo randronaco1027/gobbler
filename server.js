@@ -1,24 +1,21 @@
 const path = require('path');
 const express = require('express');
-const session = require('express-session');
+
+const exphbs = require('express-handlebars').create({
+    layoutsDir: path.join(__dirnam, 'views/layouts'),
+    partialsDir: path.join(__dirnam,'view/partials'),
+    defaultLayout: 'layout',
+    extname: 'hbs'
+});
 
 const app = express()
 const PORT = process.env.PORT || 3001
 
-const sequelize = require('./config/connection');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const sequelize = require('./config/connection')
 
-const sess = {
-    secret: 'Super secret secret',
-    cookie: {},
-    resave: false,
-    saveUninitialized: true,
-    store: new SequelizeStore({
-        db: sequelize
-    })
-};
-
-app.use(session(sess))
+app.engine('hbs', handlebars.engine);
+app.set('view engine', 'hbs');
+app.set('views',path.join(__dirname, 'views'))
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
