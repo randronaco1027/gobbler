@@ -1,0 +1,226 @@
+
+:root{
+    --black: #0a0a0a
+    --charc: #262626
+    --grey: #696969
+    --white: #d9d9d9
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*styling for <body>*/
+
+body {
+
+    color:var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/*apply styles to <header>*/
+
+header {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    background-color:var(--charc)   
+}
+
+/*header text styling*/
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--white);
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white)
+}
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li { 
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+footer {
+    background: var(--white);
+    width: 100%;
+    padding: 40px 35px;
+
+}
+footer h2 {
+    display: inline;
+    color: var(--charc);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: : right;
+}
+
+footer a {
+    color: var(--charc)
+}
+
+section {
+    padding: 60px;
+
+    
+}
+
+/* Section Styling Start */
+ .section-title {
+     font-size: 55px;
+     color: var(--charc);
+     margin-bottom: 35px;
+     padding: 0 100px 20px 100px;
+     display: inline-block;
+     border-bottom: 3px solid;
+      }
+ }
+
+ .primary-border {
+     border-color: var(--grey);
+ }
+
+ .secondary-border {
+     border-color: var(--black);
+ }
+/*Section Styling End */
+
+/* createuser Style Start */
+.createuser{
+    background-image: url(../images/oldad.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.createuser-form{
+    border: 3px solid var(--charc);
+    background-color: var(--white);
+    padding: 20px;
+    width: 500px;
+    color: var(--black);
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+
+}
+
+.createuser-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.createuser-form p {
+    margin: 5px 0 15px 0;
+}
+
+.form-input{
+    border: 1px solid var(--charc);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--grey);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.createuser-form label {
+    margin: 0 5px;
+}
+
+.createuser-form button {
+    background-color: var(--charc);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+
+}
+/* create Style End */
+
+/* intro styling start*/
+.aboutgobbler {
+    text-align: center;
+}
+
+
+
+.aboutgobbler p {
+    line-height: 1.7;
+    color: var(--grey);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+/* intro style end */
+
+
+/* contact us style start */
+.contact {
+    text-align: center;
+    background: var(--charc);
+ }
+.contact h2 {
+    color: var(--white);
+}
+
+.contact-info iframe {
+    width: 400px;
+    height: 400px;
+}
+.contact-info{
+
+    color: var(--charc);
+}
+.contact-info div {
+    width: 410px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
+    color: var(--black);
+}
+
+.contact-info h3 {
+    color: var(--grey);
+    font-size: 32px;
+}
+  
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+}
+  
+.contact-info a {
+    color: var(--white);
+}
+  
+/* conact us style stop */
