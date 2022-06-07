@@ -41,4 +41,13 @@ router.get('/login', (req, res) => {
 
     res.render('login')
 })
+
+router.get('/submit-page', (req, res) => {
+    if (req.session.logged) {
+        res.redirect('/')
+        return
+    }
+
+    res.render('addpost')
+})
 module.exports = router
