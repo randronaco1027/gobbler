@@ -180,7 +180,20 @@ section {
 }
 
 /* intro style end */
+.post-list {
+    list-style: none;
+}
 
+.list-item {
+    border: solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.post-details {
+    font-weight: lighter;
+    color: gray
+}
 
 /* contact us style start */
 .contact {
