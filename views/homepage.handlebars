@@ -1,3 +1,4 @@
+{{#if loggedIn}}
 <ul class="post-list">
   {{#each posts as |post|}}
   <li class="list-item rounded-1">
@@ -5,3 +6,8 @@
   </li>
   {{/each}}
 </ul>
+{{else}}
+<div class="login-warning">
+  <p>Please log in to see recipes!</p>
+</div>
+{{/if}}

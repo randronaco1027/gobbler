@@ -1,4 +1,4 @@
-async function newFormHandler(event) {
+async function addNewPost(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="post-title"]').value;
@@ -18,10 +18,10 @@ async function newFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/submit-page');
+    document.location.replace('/');
   } else {
     alert(response.statusText);
   }
 }
 
-document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+document.querySelector('.new-post-form').addEventListener('submit', addNewPost);

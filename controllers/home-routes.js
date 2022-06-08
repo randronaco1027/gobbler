@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
 
             res.render('homepage', {
                 posts,
-                //loggedIn: req.session.loggedIn
+                loggedIn: req.session.loggedIn
             })
         })
         .catch(err => {
@@ -43,7 +43,7 @@ router.get('/login', (req, res) => {
 })
 
 router.get('/submit-page', (req, res) => {
-    if (req.session.logged) {
+    if (!req.session.loggedIn) {
         res.redirect('/')
         return
     }

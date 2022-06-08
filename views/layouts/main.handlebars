@@ -27,7 +27,7 @@
           </li>
           <li>
             {{#if loggedIn}}
-              <button id="logout" class="btn-no-style">logout</button>
+              <button id="logout" class="btn btn-link">Logout</button>
             {{else}}
               <a href="login">Login</a>
             {{/if}}
@@ -35,6 +35,7 @@
         </ul>
       </nav>
     </header>
+    
     <section>
       {{{body}}}
     </section>
@@ -78,7 +79,9 @@
         </address>
       </div>
     </section>
-
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
     <!--footer-->
     <footer>
       &copy; 2022 GOBBLER CORP
