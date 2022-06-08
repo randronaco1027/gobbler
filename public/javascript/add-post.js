@@ -3,12 +3,14 @@ async function newFormHandler(event) {
 
   const title = document.querySelector('input[name="post-title"]').value;
   const post_url = document.querySelector('input[name="post-url"]').value;
+  const recipe_text = document.querySelector('input[name="post-description"]').value;
 
-  const response = await fetch(`/api/posts`, {
+  const response = await fetch(`/api/post`, {
     method: 'POST',
     body: JSON.stringify({
       title,
-      post_url
+      post_url,
+      recipe_text
     }),
     headers: {
       'Content-Type': 'application/json'
@@ -16,7 +18,7 @@ async function newFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/addpost');
+    document.location.replace('/submit-page');
   } else {
     alert(response.statusText);
   }
