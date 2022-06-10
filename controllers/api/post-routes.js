@@ -37,7 +37,7 @@ router.post('/', (req, res) => {
         title: req.body.title,
         post_url: req.body.post_url,
         recipe_text: req.body.recipe_text,
-        user_id: req.body.user_id
+        user_id: req.session.user_id
     })
         .then(postData => res.json(postData))
         .catch(err => {
