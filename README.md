@@ -11,7 +11,7 @@ I want a homepage of all recipes and URLs uploaded by other users
 
 A user is presented with a homepage with a message prompting the user to login if they would like to view all recipes.
 
-When the user clicks on the login tab they were presented with forms to either register a new account or login with an existing. 
+When the user clicks on the login tab they were presented with forms to either register a new account or login with an existing one. 
 
 Once the user registers an account they are logged in and redirected back to the homepage but now recipes and the option to add recipes are available.
 
@@ -23,7 +23,7 @@ When the user adds a recipe from the "Add A Recipe" tab they are redirected back
 
 When the user clicks the Logout button, their session has ended.
 
-## Technologies User
+## Technologies Used
 
 Front-end: Javascript, CSS, Bootstrap, Handlebars
 
