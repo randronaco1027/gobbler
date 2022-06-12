@@ -23,6 +23,14 @@ When the user adds a recipe from the "Add A Recipe" tab they are redirected back
 
 When the user clicks the Logout button, their session has ended.
 
+## Technologies User
+
+Front-end: Javascript, CSS, Bootstrap, Handlebars
+
+Back-end: Node.js, Express.js, Bcrypt, Dotenv, MySQL 2, Sequelize
+
+New package used: Validator NPM Package
+
 ## Preview of Application
 
 ![main page](./public/images/mainpage.png)
