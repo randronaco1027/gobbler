@@ -15,6 +15,8 @@ When the user clicks on the login tab they were presented with forms to either r
 
 Once the user registers an account they are logged in and redirected back to the homepage but now recipes and the option to add recipes are available.
 
+The titles of all the recipes are links to the recipes online.
+
 The account that was created is added to the user database and can be accessed for future use.
 
 When the user adds a recipe from the "Add A Recipe" tab they are redirected back to the homepage and their recipe will appear at the bottom.
